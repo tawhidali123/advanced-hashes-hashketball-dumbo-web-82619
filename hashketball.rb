@@ -276,31 +276,32 @@ def player_with_longest_name
 end
 
 
-# def long_name_steals_a_ton 
-#   holder = game_hash
-#   long_name = long_name_steals_a_ton
+def long_name_steals_a_ton 
+  holder = game_hash
+  long_name = long_name_steals_a_ton
   
-#   holder.each{
-#     |team, team_hash|
-#     team_hash[:players].each{
+  holder.each{
+    |team, team_hash|
+    team_hash[:players].each{
       
-#     }
-#   }
+    }
+  }
+end
+
+# def long_name_steals_a_ton?
+#   holder = game_hash
+#   long_name = player_with_longest_name
+#   max_player = nil
+#   holder.each do |team, team_hash|
+#     team_hash[:players].each do |player_hash|
+#       max_player ||= player_hash
+#       max_player = player_hash if player_hash[:stats][:steals] > max_player[:stats][:steals]
+#     end
+#   end
+
+#   max_player[:name] == long_name
 # end
 
-def long_name_steals_a_ton?
-  holder = game_hash
-  long_name = player_with_longest_name
-  max_player = nil
-  holder.each do |team, team_hash|
-    team_hash[:players].each do |player_hash|
-      max_player ||= player_hash
-      max_player = player_hash if player_hash[:stats][:steals] > max_player[:stats][:steals]
-    end
-  end
-
-  max_player[:name] == long_name
-end
 
 
 
