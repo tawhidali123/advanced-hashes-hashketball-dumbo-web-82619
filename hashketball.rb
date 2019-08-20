@@ -286,7 +286,7 @@ def long_name_steals_a_ton?
     |team, team_hash|
     team_hash[:players].each{
       |player|
-      if player[:steal] >= 21
+      if player[:steals] >= 22
         most_steals = player[:name]
       end
     }
